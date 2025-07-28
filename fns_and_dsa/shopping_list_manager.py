@@ -12,8 +12,6 @@ def remove_item(item):
 def show_items():
     return shopping_list
 
-def enter_item():
-    return input('Please enter item name')
 
 def display_menu():
     print("Shopping List Manager")
@@ -27,10 +25,11 @@ def main():
     while True:
         display_menu()
         choice = input("Enter your choice: ")
+        
 
         if choice == '1':
             # Prompt for and add an item
-            item = (input('Please enter item name: '))
+            item = (input('Enter the item to add: '))
             if add_item(item):
                 print(f'{item} added to shopping list ')
 
