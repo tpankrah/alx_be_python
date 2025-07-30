@@ -25,4 +25,4 @@ while True:
                 print("Sorry, you didn't enter C or F") 
 
     except:
-        print('Invalid temperature. Please enter a numeric value')
+        print("Invalid temperature. Please enter a numeric value.")
