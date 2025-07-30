@@ -27,11 +27,15 @@ user_input = (input("What's the weather like today? (sunny/rainy/cold): ")).lowe
 
 if user_input in recommedation.keys():
     if user_input == 'sunny':
-        print(recommedation.get('sunny'))
+       # print(recommedation.get('sunny'))
+       print('Wear a t-shirt and sunglasses')
     if user_input == 'rainy':
-        print(recommedation.get('rainy'))
+        #print(recommedation.get('rainy'))
+        print("Don't forget your umbrella and a raincoat")
     if user_input == 'cold' :
-        print (recommedation.get('cold'))
+        #print (recommedation.get('cold'))
+        print("Make sure to wear a warm coat and a scarf")
+
 else: 
     print("Sorry, I don't have recommendations for this weather.")
 
