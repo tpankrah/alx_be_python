@@ -14,7 +14,7 @@
 
 #Ask the user to input the current weather from a predefined set of conditions: sunny, rainy, or cold.
 #Use the prompt: What's the weather like today? (sunny/rainy/cold):.
-weather = ['sunny','rainy','cold']
+#weather = ['sunny','rainy','cold']
 recommedation = {'sunny':'Wear a t-shirt and sunglasses',
                  'rainy' : "Don't forget your umbrella and a raincoat",
                  'cold' : 'Make sure to wear a warm coat and a scarf'}
@@ -22,17 +22,17 @@ recommedation = {'sunny':'Wear a t-shirt and sunglasses',
 #print(recommedation.keys())
 
 
-user_input = (input("What's the weather like today? (sunny/rainy/cold): ")).lower()
+weather = (input("What's the weather like today? (sunny/rainy/cold): ")).lower()
 #Provide Clothing Recommendations:
 
-if user_input in recommedation.keys():
-    if user_input == 'sunny':
+if weather in recommedation.keys():
+    if weather == 'sunny':
        # print(recommedation.get('sunny'))
        print('Wear a t-shirt and sunglasses')
-    if user_input == 'rainy':
+    if weather == 'rainy':
         #print(recommedation.get('rainy'))
         print("Don't forget your umbrella and a raincoat")
-    if user_input == 'cold' :
+    if weather == 'cold' :
         #print (recommedation.get('cold'))
         print("Make sure to wear a warm coat and a scarf")
 
