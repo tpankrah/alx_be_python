@@ -1,13 +1,3 @@
-
--- mandatory
--- Score: 0.0% (Checks completed: 0.0%)
--- Imagine you’re tasked with designing a MySQL database for an online bookstore. 
---The database should store information about books, authors, customers, orders, and order details. 
---Here’s an overview of the database schema:
-
--- Database Name: alx_book_store
-
--- Books: Stores information about books available in the bookstore.
 CREATE DATABASE  alx_book_store;
 USE alx_book_store;
 
@@ -54,9 +44,3 @@ CREATE TABLE IF NOT EXISTS order_details(
 FOREIGN KEY (`order_id`) REFERENCES Orders(`order_id`),
 FOREIGN KEY (`book_id`) REFERENCES Books(`book_id`)
 );
-
-
--- Repo:
-
--- GitHub repository: Intro_to_DB
--- File: alx_book_store.sql
